@@ -213,3 +213,12 @@
         transform: rotate(360deg);
     }
     } 
+
+
+    .is-style-button{
+      border:unset;
+      color:white;
+      padding: unset;
+      padding: 10px;
+      cursor: pointer;
+    }

@@ -108,6 +108,7 @@ export default function Form() {
       .then((res) => {
         if (!res.data.success) {
           setError(res.data.data);
+          setLoading(false);
         } else {
           setSuccess(res.data.data.message);
           window.location.replace(res.data.data.url);
@@ -168,7 +169,14 @@ export default function Form() {
             className="is-style-button"
             onClick={handleSubmit(OnSubmit)}
           >
-            {loading ? <span className="loader"></span> : "Créer"}
+            {loading ? (
+              <div style={{ display: "flex", alignItems: "center", gap: 10 }}>
+                <span>Votre Site est en cours de création..</span>
+                <span className="loader"></span>
+              </div>
+            ) : (
+              "Créer"
+            )}
           </button>
         )}
       </form>
