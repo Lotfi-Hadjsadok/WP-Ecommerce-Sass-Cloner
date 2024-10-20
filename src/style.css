@@ -1,0 +1,215 @@
+    :root{
+      --register-primary-color: #259bea;
+      --register-secondary-color: #259bea;
+      --register-error-color:rgb(241, 57, 57)
+    }
+  
+  .register-client-main-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 48px;
+  }
+
+  .register-client-form-wrapper {
+    margin: 0 auto;
+    max-width: 550px;
+    width: 100%;
+    background: white;
+  }
+
+  .register-client-steps {
+    padding-bottom: 18px;
+    margin-bottom: 35px;
+    border-bottom: 1px solid #DDE3EC;
+  }
+  .register-client-steps ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    justify-content: space-between;
+    display: flex;
+    gap: 40px;
+  }
+  .register-client-steps li {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    color: #536387;
+  }
+  .register-client-steps li span {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #DDE3EC;
+    border-radius: 50%;
+    width: 36px;
+    height: 36px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    color: #536387;
+  }
+  .register-client-steps li.active {
+    color: var(--register-primary-color);
+  }
+  .register-client-steps li.active span {
+    background: var(--register-primary-color);
+    color: #FFFFFF;
+  }
+
+  .is-style-button{
+    background-color: var(--register-primary-color) !important;
+  }
+
+  .register-client-input-flex {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 22px;
+  }
+  .register-client-input-flex > div {
+    width: 50%;
+  }
+  .register-client-form-input {
+    width: 100%;
+    padding: 13px 22px;
+    border-radius: 5px;
+    border: 1px solid #DDE3EC;
+    background: #FFFFFF;
+    font-weight: 500;
+    font-size: 16px;
+    color: #536387;
+    outline: none;
+    resize: none;
+  }
+  .register-client-form-input:focus {
+    border-color: var(--register-secondary-color);
+    box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.05);
+  }
+  .register-client-form-label {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 24px;
+    display: block;
+    margin-bottom: 20px;
+    margin-top: 20px;
+  }
+
+   .error{
+    font-size: small;
+    color: var(--register-error-color);
+    margin-top: 0px;
+    height: 10px;
+  }
+  
+   .success{
+    font-size: small;
+    color: rgb(5, 152, 5);
+    margin-top: 0px;
+    height: 10px;
+  }
+  .register-client-form-label.has-error{
+    color: var(--register-error-color);
+  }
+  .register-client-form-label.has-error input{
+    border-color:var(--register-error-color) !important;
+  }
+
+  .register-client-form-confirm {
+    border-bottom: 1px solid #DDE3EC;
+    padding-bottom: 35px;
+  }
+  .register-client-form-confirm p {
+    font-size: 16px;
+    line-height: 24px;
+    color: #536387;
+    margin-bottom: 22px;
+    width: 75%;
+  }
+  .register-client-form-confirm > div {
+    display: flex;
+    gap: 15px;
+  }
+
+  .register-client-confirm-btn {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background: #FFFFFF;
+    border: 0.5px solid #DDE3EC;
+    border-radius: 5px;
+    font-size: 16px;
+    line-height: 24px;
+    color: #536387;
+    cursor: pointer;
+    padding: 10px 20px;
+    transition: all .3s ease-in-out;
+  }
+  .register-client-confirm-btn {
+    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.12);
+  }
+  .register-client-confirm-btn.active {
+    background: var(--register-primary-color);
+    color: #FFFFFF;
+  }
+
+  .register-client-form-btn-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 25px;
+    margin-top: 25px;
+  }
+  .register-client-back-btn {
+    cursor: pointer;
+    background: #FFFFFF;
+    border: none;
+    color: var(--register-primary-color);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    display: none;
+  }
+  .register-client-back-btn.active {
+    display: block;
+  }
+  .register-client-btn {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-size: 16px;
+    border-radius: 5px;
+    padding: 10px 25px;
+    border: none;
+    font-weight: 500;
+    background-color: var(--register-secondary-color);
+    color: white;
+    cursor: pointer;
+  }
+  .register-client-btn:hover {
+    box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.05);
+  }
+
+
+  .loader {
+    height: 20px;
+    width: 20px;
+    border: 5px solid #FFF;
+    border-bottom-color: transparent;
+    border-radius: 50%;
+    display: inline-block;
+    box-sizing: border-box;
+    animation: rotation 1s linear infinite;
+    }
+
+    @keyframes rotation {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+    } 
